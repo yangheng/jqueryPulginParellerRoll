@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>插件演示</title>
+<meta name="description" content="插件演示">
+<meta name="keywords" content="图片滚动,jquery插件">
+<link href="Site.css" rel="stylesheet">
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="jquery.plugin.parellerRoll.js"></script>
+
+</head>
+<body>
+<div class="container">
+     <div class="carousel" id="demo">
+                    <ul class="clearfix carousel-body" id="demo1">
+                        <li>
+                            <div class="image">
+                                <a href="home/infomation">
+                                    <img src="home_1.jpg" alt="警务信息" /></a>
+                            </div>
+                            
+                             <a href="home/infomation" class="text">
+                                警务信息
+                             </a>
+                                
+                            
+                        </li>
+                        <li>
+                            <div class="image">
+                                <a href="home/casequeryout">
+                                    <img src="home_2.jpg" alt="案件查询" /></a>
+                            </div>
+                             <a href="home/casequeryout" class="text">
+                                 案件查询
+                             </a>
+                          
+                        </li>
+                        <li>
+                            <div class="image">
+                                <a href="home/punish">
+                                    <img src="home_3.jpg" alt="行政处罚结果公开" /></a>
+                            </div>
+                             <a href="home/punish" class="text">
+                                 行政处罚结果公开
+                             </a>                          
+                        </li>
+                        <li>
+                            <div class="image">
+                                <a href="home/LawComplaintsWarn">
+                                    <img src="home_4.jpg" alt="不规范执法投诉" /></a>
+                            </div>
+                             <a href="home/LawComplaintsWarn" class="text">
+                                 不规范执法投诉
+                             </a>   
+                           
+                        </li>
+                        <li>
+                            <div class="image">
+                                <a href="/hqpcs/home/Manage">
+                                    <img src="home_5.jpg" alt="行政管理" /></a>
+                            </div>
+                             <a href="home/Manage" class="text">
+                                 行政管理
+                             </a>                              
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0)" class="left" id="left"></a><a href="javascript:void(0)" class="right" id="right">
+                    </a>
+                </div>
+</div>
+    <script type="text/javascript">
+     $.fn.parallelRoll.defaults = {
+                boxName: 'carousel',
+                tagName: 'li',
+                time: 3000,  // 
+                direction: 'left', // 滚动方向
+                visual: 5, //可视数
+                prev: 'left',
+                next: 'right',
+                amount: 1   // 滚动数  默认是1
+            };
+            $("#demo1").parallelRoll({
+
+            });
+</script>
+</body>
+</html>

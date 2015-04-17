@@ -1,0 +1,139 @@
+﻿body
+{
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: 宋体;
+    font-size: 12px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+}
+ul, form, img, dl, dd, h2, h3, h4, h5, h6, p
+{
+    margin: 0;
+    padding: 0;
+}
+li
+{
+    list-style-type: none;
+}
+a
+{
+    color: #155A9B;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #FF0000;
+}
+
+        
+/*改版的*/
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+    overflow:hidden;
+}
+.clearfix {
+    zoom:1; /* for ie6 & ie7 */
+}
+.clear {
+    clear:both;
+    display:block;
+    font-size:0;
+    height:0;
+    line-height:0;
+    overflow:hidden;
+}
+.clearfix
+{
+    *zoom:1;
+}
+.pull-left
+{
+    float:left;
+ }
+ .pull-right
+ {
+     float:right
+  }
+ .container{
+    width: 770px;
+ }    
+.subtop
+{
+    margin-top:3px;
+}
+.carousel-wrapper
+{
+    border:1px solid #2b6397;
+}
+.carousel-heading
+{
+    height:118px;
+}
+.carousel
+{
+    position:relative;
+    overflow:hidden;
+    padding:24px 18px 17px 25px;
+    background:url(home_carousel.jpg) no-repeat left top ;
+}
+.carousel-body
+{
+    width:200%;
+}
+
+    
+.carousel ul>li
+{
+    width:177px;
+    height:130px;
+    margin-right:9px;
+    text-align:center;
+    
+    float:left;
+    background:url(home_itme.png) no-repeat left top ;
+    
+}
+.carousel ul>li .image
+{
+    margin-top:19px;
+    height:73px;
+}
+.carousel ul>li .image a
+{
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+}
+.carousel ul>li .text
+{
+    height:36px;
+    line-height:36px;
+    font-size:18px;
+    color:White;
+    font-weight:bold
+}
+.carousel a.left,.carousel a.right
+{
+    position:absolute;
+    top:75px;
+    width:25px;
+    height:26px;
+    display:block;
+    background:url(left.png) no-repeat left center;
+}
+.carousel a.left
+{
+    left:4px;
+}
+.carousel a.right
+{
+    right:4px;
+    background-image:url(right.png);
+}
+ 
